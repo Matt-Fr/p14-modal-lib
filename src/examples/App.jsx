@@ -3,22 +3,22 @@ import Modal from '../lib/Modal'
 
 const App = () => {
 
-  const [display, setDisplay] = useState(false)
-
+ const [openModal, setOpenModal] = useState(false);
   return (
     <div>
-      <button onClick={() => setDisplay(true)}>
-        Show modal
+      <button
+        onClick={() => {
+          setOpenModal(!openModal);
+        }}
+      >
+        Open the modal!!
       </button>
-      <Modal 
-        title='Welcome !' 
-        content='This is a modal plugin.' 
-        hideModal={() => setDisplay(false)}
-        visible={display}
-      />
-
+      <Modal
+        message="Employee Created"
+        openModal={openModal}
+        setOpenModal={setOpenModal}
+      ></Modal>
     </div>
-  );
-};
+  )};
 
 export default App;
