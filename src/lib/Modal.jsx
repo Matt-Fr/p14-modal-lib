@@ -27,3 +27,4 @@ export const Modal = ({ message, openModal, setOpenModal }) => {
     )
   );
 };
+
