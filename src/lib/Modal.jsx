@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types'
 import styles from './Modal.module.css'
 import { AiFillCloseCircle } from "react-icons/ai";
@@ -28,3 +27,8 @@ export const Modal = ({ message, openModal, setOpenModal }) => {
   );
 };
 
+Modal.propTypes = {
+  message: PropTypes.string,
+  openModal: PropTypes.bool.isRequired,
+  setOpenModal: PropTypes.bool.isRequired
+}
