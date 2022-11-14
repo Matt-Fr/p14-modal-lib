@@ -1,7 +1,7 @@
 {
   "name": "matt-fr-react-modal",
   "author": "matt-fr",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": false,
   "description": "A modal component for your React app",
   "main": "dist/index.js",
@@ -32,6 +32,12 @@
     "react-icons": "^4.6.0",
     "web-vitals": "^2.1.4"
   },
+  "keywords": [
+    "React",
+    "Modal",
+    "UseState",
+    "Npm"
+  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",

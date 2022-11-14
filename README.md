@@ -1,6 +1,7 @@
 # React Modal Librairy
 
 A library of a React component created using `create-react-app`.
+This component is a modal in which you can place a message in it, the modal will be in the center of your page.
 
 ## How to install
 
